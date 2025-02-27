@@ -3,113 +3,307 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming Soon</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            background-color: #f4f4f4;
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .audio-section {
-            background-color: #fff;
-            margin: 15px;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 80%;
-            max-width: 600px;
-        }
-        .audio-section h2 {
-            color: #333;
-        }
-        audio {
-            width: 100%;
-            margin-top: 10px;
-        }
-        .row {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            gap: 20px;
-            width: 80%;
-            max-width: 1200px;
-        }
-    </style>
+    <title>Interspeech 2025 audio demos.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Coming Soon</h1>
+    <h1>ClaritySpeech: Dementia Obfuscation in Speech</h1>
+    <div class="image-container">
+        <img src="image.png" alt="Image description">
+    </div>
+    <div class="paper-title">
+        <p> These are the audio samples for the Interspeech 2025 submission <i>"ClaritySpeech: Dementia Obfuscation in Speech".</i> <br><br>
+            In this work, we present an end-to-end obfuscation mechanism for dementia in speech while preserving speaker characteristics and improving speech quality. <br><br>
+            <b>Unfortunately, due to the dataset being password controlled, we cannot publicly shared the source and references audio samples.</b>
+        </p>
+    </div>
 
     <div class="container">
-        <!-- Paper Title -->
-        <div class="paper-title">
-            <h2>"A Study"</h2>
+        <div class="row-title">
+            <h2>Audio Samples across severity with different ZS-TTS bases</h2>
         </div>
 
-        <!-- Row 1 - Audio Samples -->
-        <div class="row">
-            <!-- Audio Sample for System 1 -->
+        <div class="audio-row-container">
+            <!-- Column Titles -->
+            <div class="audio-row">
+                <div class="column-title">Severity</div>
+                <div class="column-title">GT</div>
+                <div class="column-title">Transcription</div>
+                <div class="column-title">Obf. Trans</div>
+                <div class="column-title">XTTSv2</div>
+                <div class="column-title">StyleTTS2</div>
+                <div class="column-title">Hierspeech++</div>
+            </div>
+
+            <!-- Row 1 of Audio Samples -->
+            <div class="audio-row">
+                <div class="severity">
+                    <p>Mild</p>
+                </div>
+
+                <div class="severity">
+                    <p>The water is running overflowing the sink.</p>
+                </div>
+                <div class="severity">
+                    <p>waters running overflowing the sink.</p>
+                </div>
+                <div class="severity">
+                    <p> The sink is overflowing.</p>
+                </div>
+                <!-- Audio Sample 1 -->
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr/xtts/s1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Audio Sample 2 -->
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr/styletts2/s1.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Audio Sample 3 -->
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr/hierspeechpp/s1.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Row 2 of Audio Samples -->
+            <div class="audio-row">
+                <div class="severity">
+                    <p>Moderate</p>
+                </div>
+                <!-- Audio Sample 1 -->
+                <div class="severity">
+                    <p>Oh and there's a glu little girl here talking and a blu little boy i assume.</p>
+                </div>
+                <div class="severity">
+                    <p>Oh, and there's a little girl in a little boy.</p>
+                </div>
+                <div class="severity">
+                    <p> A little girl is accompanied by a little boy.</p>
+                </div>
+                <!-- Audio Sample 1 -->
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr/xtts/s2.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Audio Sample 2 -->
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr/styletts2/s2.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+                <!-- Audio Sample 3 -->
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr/hierspeechpp/s2.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+        <!-- Row 3 of Audio Samples -->
+        <div class="audio-row">
+            <div class="severity">
+                <p>High</p>
+            </div>
+            <!-- Audio Sample 1 -->
+            <div class="severity">
+                <p>and well this here one one one they're falling falling down in through here.</p>
+            </div>
+            <div class="severity">
+                <p>And this year, one, they're falling down in through here.</p>
+            </div>
+            <div class="severity">
+                <p>One of them is falling down through here.</p>
+            </div>
+            <!-- Audio Sample 1 -->
             <div class="audio-section">
-                <h2>System 1 - Audio Sample</h2>
-                <audio controls>
-                    <source src="system1_sample.mp3" type="audio/mp3">
+                <audio controls controlsList="nodownload">
+                    <source src="data/asr/xtts/s3.wav" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-
-            <!-- Audio Sample for System 2 -->
+            <!-- Audio Sample 2 -->
             <div class="audio-section">
-                <h2>System 2 - Audio Sample</h2>
-                <audio controls>
-                    <source src="system2_sample.mp3" type="audio/mp3">
+                <audio controls controlsList="nodownload">
+                    <source src="data/asr/styletts2/s3.wav" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
             </div>
-
-            <!-- Audio Sample for System 3 -->
+            <!-- Audio Sample 3 -->
             <div class="audio-section">
-                <h2>System 3 - Audio Sample</h2>
-                <audio controls>
-                    <source src="system3_sample.mp3" type="audio/mp3">
+                <audio controls controlsList="nodownload">
+                    <source src="data/asr/hierspeechpp/s3.wav" type="audio/mp3">
                     Your browser does not support the audio element.
                 </audio>
             </div>
         </div>
-
-        <!-- Row 2 - Audio Samples -->
-        <div class="row">
-            <!-- Audio Sample for System 4 -->
-            <div class="audio-section">
-                <h2>System 4 - Audio Sample</h2>
-                <audio controls>
-                    <source src="system4_sample.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-
-            <!-- Audio Sample for System 5 -->
-            <div class="audio-section">
-                <h2>System 5 - Audio Sample</h2>
-                <audio controls>
-                    <source src="system5_sample.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
         </div>
+
+        <hr>
+
+        <div class="row-title">
+            <h2>When ASR fails</h2>
+        </div>
+
+        <div class="audio-row-container">
+            <!-- Column Titles -->
+            <div class="audio-row">
+                <div class="column-title">Severity</div>
+                <div class="column-title">GT</div>
+                <div class="column-title">Transcription</div>
+                <div class="column-title">Obf. GT</div>
+                <div class="column-title">Obf. Trans</div>
+                <div class="column-title">DOS</div>
+            </div>
+
+            <!-- Row 1 of Audio Samples -->
+            <div class="audio-row">
+                <div class="severity">
+                    <p>Mild</p>
+                </div>
+                <div class="severity">
+                    <p>He's partially gonna fall off the stool.</p>
+                </div>
+                <div class="severity">
+                    <p>These, uh, partially even fall off the stool.</p>
+                </div>
+                <div class="severity">
+                    <p>He may fall off the stool.</p>
+                </div>
+                <div class="severity">
+                    <p> The stool partially falls off.</p>
+                </div>
+    
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr_fails/dos/asr1.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Row 2 of Audio Samples -->
+            <div class="audio-row">
+
+                <div class="severity">
+                    <p>Mild</p>
+                </div>
+                <div class="severity">
+                    <p>Cupboards underneath the other cupboards.</p>
+                </div>
+                <div class="severity">
+                    <p>I think I was underneath the other coverage.</p>
+                </div>
+                <div class="severity">
+                    <p>The cupboards are located underneath the other cupboards.</p>
+                </div>
+                <div class="severity">
+                    <p> I was underneath the other coverage.</p>
+                </div>
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr_fails/dos/asr2.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Row 3 of Audio Samples -->
+            <div class="audio-row">
+
+                <div class="severity">
+                    <p>Moderate</p>
+                </div>
+                <div class="severity">
+                    <p>And the they seem oblivious to the water falling overflowing.</p>
+                </div>
+                <div class="severity">
+                    <p>And they seem oblivious to the waterfall. Uh-huh. The water flowing.</p>
+                </div>
+                <div class="severity">
+                    <p>They seem oblivious to the water overflowing.</p>
+                </div>
+                <div class="severity">
+                    <p>The water is flowing.</p>
+                </div>
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr_fails/dos/asr3.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+
+            <!-- Row 4 of Audio Samples -->
+            <div class="audio-row">
+
+                <div class="severity">
+                    <p>Mild</p>
+                </div>
+                <div class="severity">
+                    <p>The cookie jar stealing the cookie out of the cookie jar.</p>
+                </div>
+                <div class="severity">
+                    <p>The cookie jar steering cookie at her cookie jar.</p>
+                </div>
+                <div class="severity">
+                    <p>The cookie jar is stealing the cookie from the cookie jar.</p>
+                </div>
+                <div class="severity">
+                    <p>The cookie jar steering cookie at her cookie jar.</p>
+                </div>
+                  <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr_fails/dos/asr4.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <!------>
+
+
+            <!-- Row 5 of Audio Samples -->
+            <div class="audio-row">
+                <div class="severity">
+                    <p>Moderate</p>
+                </div>
+                <div class="severity">
+                    <p>Woman left her faucet running and it rolled over the floor.</p>
+                </div>
+                <div class="severity">
+                    <p>The woman left her boss running and it rolled over to the floor.</p>
+                </div>
+                <div class="severity">
+                    <p>A woman left her faucet running and it fell over the floor.</p>
+                </div>
+                <div class="severity">
+                    <p>The woman left her boss running and fell to the floor.</p>
+                </div>
+                <div class="audio-section">
+                    <audio controls controlsList="nodownload">
+                        <source src="data/asr_fails/dos/asr5.wav" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+            <!------>
+
+
+        </div>
+    </div>
     </div>
 
 </body>
 </html>
 
-
-</body>
-</html>
